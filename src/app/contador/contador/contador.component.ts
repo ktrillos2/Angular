@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-component',
+  selector: 'app-contador',
   template: `
     <h1> {{ titulo }} </h1>
 
@@ -12,7 +12,7 @@ import { Component } from '@angular/core';
     <span>{{ numero }}</span>
     <button (click)="acumular(-base)">-{{ base }}</button>
   `,
-  styleUrls: ['../app.component.css']
+  styleUrls: ['../../app.component.css']
 })
 export class ContadorComponent {
     titulo: string = 'Contador app';
